@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: <%= ENV['WCC_DATABASE_USERNAME'] %>
+  password: <%= ENV['WCC_DATABASE_PASSWORD'] %>
+
+development:
+  <<: *default
+  database: wcc_development
+
+test:
+  <<: *default
+  database: wcc_test
+
+production:
+  <<: *default
+  database: wcc_production
