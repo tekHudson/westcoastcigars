@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <h1 class="display-3">Welcome to West Coast Cigars!</h1>
+
+  <p class="lead">West Coast Cigars is the premier cigar store and lounge in the south bay area.</p>
+
+  <hr class="my-4">
+
+  <p>Choose from over a hundred lines of puros, dozens of loose pipe tobaccos and all the accessories a connoisseur could need. <%= link_to 'Learn more', '#' %></p>
+</div>
+
+<div class="all-posts">
+  <% @posts.each_with_index do |post, n| %>
+    <%#= render partial: "posts/row", locals: { post: post, shift_image_left: n%2 == 0 } %>
+  <% end %>
+</div>

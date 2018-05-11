@@ -1,0 +1,5 @@
+<div class="row featurette<%= shift_image_left ? ' dark' : ''%>">
+  <%= render partial: "posts/carousel", locals: { post: post } if shift_image_left %>
+  <%= render partial: "posts/text", locals: { post: post } %>
+  <%= render partial: "posts/carousel", locals: { post: post } unless shift_image_left %>
+</div>

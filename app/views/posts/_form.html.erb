@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :subject %>
-    <%= form.text_field :subject, id: :post_subject %>
+    <%= form.text_field :subject, id: :post_subject, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :text %>
-    <%= form.text_field :text, id: :post_text %>
+    <%= form.text_area :text, id: :post_text, class: 'form-control' %>
   </div>
 
-  <div class="field">
+  <div class="form-group">
     <%= form.label :image %>
     <%= form.file_field :image, id: :post_image %>
   </div>
